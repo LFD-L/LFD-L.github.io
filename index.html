@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勾勾互娱</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <style>
+       @media (min-width: 480px) and (max-width: 767px) {
+        .nav .nav_l{
+                display: none;
+            }
+        }
+        @media (max-width: 479px) {
+            .nav .nav_l{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Mutual">
+       <div class="head" id="head">
+                <div class="nav centre">
+                    <div class="logo">
+                        <img src="./images/logo.jpg" alt="这是一个Logo图片">
+                    </div>
+                     <div class="nav_l">
+                        <a style="font-weight: 600;" href="#HOME">HOME</a>
+                        <a href="#ABOUT">ABOUT US</a>
+                        <a href="#CLIENT">CLIENT</a>
+                        <a href="#CASE">CASE</a>
+                        <a href="#MCN">MCN</a>
+                        <a href="#HI">SAY HI</a>
+                        </div>
+                    </div>
+       </div>
+       <div class="content">
+            <img id="HOME" src="./images/banner.jpg" alt="这是一个橱窗图片">
+            <img id="ABOUT" src="./images/about_us.jpg" alt="这是一个介绍我们信息的图片">
+            <img id="CLIENT" src="./images/client.jpg" alt="这是我们的客户的信息图片">
+            <div class="case_01" id="CASE">
+                <img src="./images/case_01.jpg" alt="这是一个钉钉案例">
+                <a target="_blank" href="https://www.bilibili.com/video/BV1Ep4y117RJ"><img class="dingding" src="./images/video_dingding-.png" alt="这是钉钉跳转视频"></a>
+            </div>
+            <div class="case_02">
+                <img src="./images/case_02.jpg" alt="短视频内容创作">
+                <a target="_blank" href="https://www.bilibili.com/video/BV1V7411Z7AB"> <img class="alipay" src="./images/video_alipay.png" alt="短视频内容创作跳转"></a>
+            </div>
+            <img style="vertical-align:bottom;" src="./images/case_03.jpg" alt="新媒体矩阵运营">
+            <div class="case_04">
+                <img target="_blank"  src="./images/case_04.jpg" alt="宣传片摄制">
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1jJ411j7H8"> <img class="video_1" src="./images/video_1.png" alt="凯越酒店宣传视频"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1Ht411d7AJ"> <img class="video_2" src="./images/video_2.png" alt="Al唇语识别大挑战"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1tt411C7k3"> <img class="video_3" src="./images/video_3.png" alt="搜狗宣传视频"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1tt411C7k9"> <img class="video_4" src="./images/video_4.png" alt="IPO纪录片"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1tt411C7Ca"> <img class="video_5" src="./images/video_5.png" alt="采访-马剑越"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1EJ411D7dr"> <img class="video_6" src="./images/video_6.png" alt="女主播采访"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1V7411Z7AB"> <img class="video_7" src="./images/video_7.png" alt="YY宣传视频盛典互动"></a>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1bt411C7HL"> <img class="video_8" src="./images/video_8.png" alt="抖音宣传视频采访-张欣尧"></a>
+                <!-- <img class="alipay" src="./images/video_alipay.png" alt=""> -->
+            </div>
+            <img id="MCN" src="./images/mcn.jpg" alt="MCN矩阵">
+            <img id="HI" src="./images/contact.jpg" alt="商务合作">
+       </div>
+       <a class="headTop" id="backTop"  href="#head">
+            <img src="./images/top.png" alt="返回顶部">
+       </a>
+    </div>
+</body>
+</html>
+<script>
+var BackTop = function (domE,distance) {
+    if (!domE) return;
+    var _onscroll = window.onscroll,
+        _onclick = domE.onclick;
+
+    window.onscroll = throttle(function(){
+        typeof _onscroll === 'function' && _onscroll.apply(this, arguments);
+        toggleDomE();
+    },100);
+    domE.onclick = function(){
+        typeof _onclick === 'function' && _onclick.apply(this, arguments);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    };
+
+    function toggleDomE(){
+        domE.style.display = (document.documentElement.scrollTop || document.body.scrollTop) > (distance || 500) ? 'block' : 'none';
+    }
+
+    function throttle(func, wait) {
+        var timer = null;
+        return function () {
+            var self = this, args = arguments;
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(function () {
+                return typeof func === 'function' && func.apply(self, args);
+            }, wait);
+        }
+    }
+};
+var backTop= document.getElementById('backTop')
+ BackTop(backTop) 
+</script>
