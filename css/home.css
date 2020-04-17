@@ -26,11 +26,15 @@
      margin-left: 55px;
      color: #48402c;
 }
+.content{
+    font-family: monospace;
+}
 .content img{
     width: 100%;
     height: 100%;
+    vertical-align: bottom;
 }
-.case_01,.case_02,.case_04{
+.case_01,.case_02,.case_03,.case_04{
     position: relative;
 }
 .case_01 .dingding{
@@ -51,6 +55,13 @@
     height: 12%;
     width: 17%;
     position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+.case_04 p{
+    margin-top: 6%;
+    width: 100%;
 }
 .case_04 .video_1{
     top: 19%;
@@ -88,4 +99,98 @@
     position: fixed;
     bottom: 10%;
     right: 5%;
+}
+
+#ABOUT,#HI,#MCN{
+    position: relative;
+}
+#ABOUT .aboutText{
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    /* width: 100%; */
+    -webkit-transform-origin-x: 0;
+    -webkit-transform-origin-y: 0;
+    -webkit-transform: scale(1);
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+#ABOUT .aboutText p{
+    margin-bottom: 7%;
+}
+.provide{
+    font-size: 1.8rem;
+    position: relative;
+}
+.provideText{
+    position: absolute;
+    width: 100%; 
+    bottom: 5%;
+    text-align: center;
+}
+.provideText>p{
+    margin-bottom: 2%;
+}
+.case_01Text{
+    position: absolute;
+    left: 10%;
+    top:79%;
+    font-size: 1.8rem;
+}
+.case_01Text p{
+    margin-bottom: 2%;
+    white-space: nowrap;
+
+}
+.case_02Text{
+    position: absolute;
+    left: 30.5%;
+    top:73%;
+    font-size: 1.8rem;
+}
+.case_02Text p{
+    margin-bottom: 2%;
+    white-space: nowrap;
+}
+.case_03Text{
+    position: absolute;
+    left: 8.5%;
+    top: 73%;
+    font-size: 1.8rem;
+}
+.case_03Text p{
+    margin-bottom: 2%;
+    white-space: nowrap;
+}
+
+.case_03_2Text{
+    position: absolute;
+    left: 26.5%;
+    top: 78%;
+    font-size: 1.8rem;
+}
+.case_03_2Text p{
+    margin-bottom: 2%;
+    white-space: nowrap;
+}
+.HiText{
+    position: absolute;
+    left: 28.2%;
+    top: 40%;
+    font-size: 1.8rem;
+}
+.HiText p{
+    white-space: nowrap;
+    margin-bottom: 2%;
+}
+
+.MctText{
+    position: absolute;
+    left: 8.3%;
+    top: 46%;
+    font-size: 1.8rem;
+}
+.MctText p{
+    white-space: nowrap;
+    margin-bottom: 3%;
 }

@@ -8,16 +8,77 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/home.css">
     <style>
+         @media (min-width: 767px) and (max-width: 1600px) {
+            #ABOUT .aboutText{
+                -webkit-transform-origin-x: 0;
+                -webkit-transform-origin-y: 0;
+                -webkit-transform: scale(.8);
+            }
+            #ABOUT .aboutText p{
+                margin-bottom: 5%;
+            }
+            .case_01Text, .case_02Text ,.HiText p,.case_03Text,.case_03_2Text,.MctText{
+                -webkit-transform-origin-x: 0;
+                -webkit-transform-origin-y: 0;
+                -webkit-transform: scale(.8);
+            }
+            .case_04 p{
+                -webkit-transform: scale(.8);
+                display: flex;
+                justify-content: center;
+            }
+        }
        @media (min-width: 480px) and (max-width: 767px) {
-        .nav .nav_l{
-                display: none;
+            .nav .nav_l{
+                    display: none;
+                }
+            #ABOUT .aboutText{
+                -webkit-transform-origin-x: 0;
+                -webkit-transform-origin-y: 0;
+                -webkit-transform: scale(.5);
+                font-size: 9px !important;
+            }
+            .case_01Text, .case_02Text ,.HiText p,.case_03Text,.case_03_2Text,.MctText{
+                -webkit-transform-origin-x: 0;
+                -webkit-transform-origin-y: 0;
+                -webkit-transform: scale(.5);
+            }
+            .case_04 p{
+                -webkit-transform: scale(.5);
+                display: flex;
+                justify-content: center;
+                margin-top: 0;
             }
         }
         @media (max-width: 479px) {
             .nav .nav_l{
                 display: none;
             }
+            #ABOUT .aboutText{
+                -webkit-transform-origin-x: 0;
+                -webkit-transform-origin-y: 0;
+                -webkit-transform: scale(.5);
+                font-size: 9px;
+            }
+            .provideText{
+                -webkit-transform: scale(.5);
+                font-size: 9px;
+            }
+            .case_04 p{
+                -webkit-transform: scale(.5);
+                font-size: 9px;
+                display: flex;
+                justify-content: center;
+                margin-top: 0;
+            }
+        .case_01Text, .case_02Text,.HiText p,.case_03Text,.case_03_2Text,.MctText{
+                -webkit-transform-origin-x: 0;
+                -webkit-transform-origin-y: 0;
+                -webkit-transform: scale(.5);
+                font-size: 9px;
+            }
         }
+       
     </style>
 </head>
 <body>
@@ -39,31 +100,143 @@
        </div>
        <div class="content">
             <img id="HOME" src="./images/banner.jpg" alt="这是一个橱窗图片">
-            <img id="ABOUT" src="./images/about_us.jpg" alt="这是一个介绍我们信息的图片">
+            <div id="ABOUT">
+                <img  src="./images/about_us.jpg" alt="这是一个介绍勾勾互娱信息的图片">
+                <div class="aboutText">
+                    <p>勾勾互娱成立于2017年，团队位于广州和背景，</p>
+                    <p>我们是互联网生态内容供应商，深耕短视频领域,</p>
+                    <p>在抖音/B站/微博/小红书等平台，持续不断生产优质内容,</p>
+                    <p>通过内容传播为产品赋能，紧密连接消费者。</p>
+                </div>
+            </div>
+            <div class="provide">
+                <img src="./images/we_provide.jpg" alt="我们提供的帮助">
+                <div class="provideText">
+                    <p>我们专注于短视频领域的相关业务</p>
+                    <div>实现内容+营销+渠道内容闭环的传播模式</div>
+                </div>
+            </div>
+            
             <img id="CLIENT" src="./images/client.jpg" alt="这是我们的客户的信息图片">
             <div class="case_01" id="CASE">
                 <img src="./images/case_01.jpg" alt="这是一个钉钉案例">
                 <a target="_blank" href="https://www.bilibili.com/video/BV1Ep4y117RJ"><img class="dingding" src="./images/video_dingding-.png" alt="这是钉钉跳转视频"></a>
+                <div class="case_01Text">
+                    <p>结合#网课、#在线办公等热点话题，在B站、抖音等短视频平台的创意策划与制作,</p>
+                    <p>用鬼畜空耳RAP等形式创作多条脍炙人口的短视频内容,</p>
+                    <p>创造多条爆款内容，提高钉钉在年轻用户心中的认知度和认同感。</p>
+                </div>
             </div>
             <div class="case_02">
                 <img src="./images/case_02.jpg" alt="短视频内容创作">
                 <a target="_blank" href="https://www.bilibili.com/video/BV1V7411Z7AB"> <img class="alipay" src="./images/video_alipay.png" alt="短视频内容创作跳转"></a>
+                <div class="case_02Text">
+                    <p>结合#支付宝升级成数字化生活平台#支付宝L OGO变更蓝的支付宝相关事件</p>
+                    <p>在B站、微博平台的策划了一系列的营销内容，吸引年轻用户关注和讨论,</p>
+                    <p>更是打造支付宝+钉钉阿里全家桶内最强蓝蓝CP组合，传播项目成功出圈。</p>
+                </div>
             </div>
-            <img style="vertical-align:bottom;" src="./images/case_03.jpg" alt="新媒体矩阵运营">
+
+
+            <div class="case_03">
+                <img style="vertical-align:bottom;" src="./images/case_03_1.jpg" alt="阿里云">
+                <div class="case_03Text">
+                    <p>针对阿里云云服务、Al、大数据等业务属性，用通俗易懂的语言，</p>
+                    <p>在抖音。B站等短视频平台的创意策划与制作，创作多条爆款视频,</p>
+                    <p>协助阿里云团队提升在C端的影响力、认知并认可阿里云的品牌实力与技术。</p>
+                </div>
+            </div>
+            <div class="case_03">
+                <img style="vertical-align:bottom;" src="./images/case_03_2.png" alt="搜狗">
+                <div class="case_03_2Text">
+                    <p>负责搜狗品牌的新媒体矩阵运营，提高搜狗在Al领域认知度和认同感。夯实搜狗在搜索</p>
+                    <p>领域和Al硬件领域的行业地位。</p>
+                </div>
+            </div>
+            <div class="case_03">
+                <img style="vertical-align:bottom;" src="./images/case_03_3.png" alt="小红书">
+                <div class="case_03Text" style="top:75%">
+                    <p>协助雅思兰黛产品线完成宣发物料制作工作，完成了超过1000+物料设计延展,</p>
+                    <p>在抖音。B站等短视频平台的创意策划与制作，创作多条爆款视频,</p>
+                    <p>服务范畴广泛，无论是抖音视频还是开屏投放均可轻松“搞定”!</p>
+                </div>
+            </div>
+            <div class="case_03">
+                <img style="vertical-align:bottom;" src="./images/case_03_4.jpg" alt="明媚果汁">
+                <div class="case_03Text" style="left: 30%;top: 68%;">
+                    <p>协助明媚果汁品牌在公关.上发力，通过结合年轻人喜闻乐见的活动事件，将明媚果汁和</p>
+                    <p>阳光、年轻、活力等关键词进行绑定，强化用户和经销商的认知。</p>
+                </div>
+            </div>
+
+
             <div class="case_04">
                 <img target="_blank"  src="./images/case_04.jpg" alt="宣传片摄制">
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1jJ411j7H8"> <img class="video_1" src="./images/video_1.png" alt="凯越酒店宣传视频"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1Ht411d7AJ"> <img class="video_2" src="./images/video_2.png" alt="Al唇语识别大挑战"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1tt411C7k3"> <img class="video_3" src="./images/video_3.png" alt="搜狗宣传视频"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1tt411C7k9"> <img class="video_4" src="./images/video_4.png" alt="IPO纪录片"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1tt411C7Ca"> <img class="video_5" src="./images/video_5.png" alt="采访-马剑越"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1EJ411D7dr"> <img class="video_6" src="./images/video_6.png" alt="女主播采访"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1V7411Z7AB"> <img class="video_7" src="./images/video_7.png" alt="YY宣传视频盛典互动"></a>
-                    <a target="_blank" href="https://www.bilibili.com/video/BV1bt411C7HL"> <img class="video_8" src="./images/video_8.png" alt="抖音宣传视频采访-张欣尧"></a>
+                    <a class="video_1" target="_blank" href="https://www.bilibili.com/video/BV1jJ411j7H8"> 
+                        <img  src="./images/video_1.png" alt="凯越酒店宣传视频">
+                        <p>凯越酒店宣传视频</p>
+                        <p>微信小程序宣传</p>
+                    </a>
+                    <a class="video_2" target="_blank" href="https://www.bilibili.com/video/BV1Ht411d7AJ"> 
+                        <img  src="./images/video_2.png" alt="Al唇语识别大挑战">
+                        <p>搜狗宣传视频</p>
+                        <p>AI唇语识别大挑战</p>
+                    </a>
+                    <a class="video_3" target="_blank" href="https://www.bilibili.com/video/BV1tt411C7k3">
+                         <img  src="./images/video_3.png" alt="搜狗宣传视频">
+                         <p>搜狗宣传视频</p>
+                        <p>搜狗宣传视频</p>
+                    </a>
+                    <a class="video_4" target="_blank" href="https://www.bilibili.com/video/BV1tt411C7k9"> 
+                        <img  src="./images/video_4.png" alt="IPO纪录片">
+                        <p>搜狗宣传视频</p>
+                        <p>IPO纪录片</p>
+                    </a>
+                    <a class="video_5" target="_blank" href="https://www.bilibili.com/video/BV1tt411C7Ca"> 
+                        <img  src="./images/video_5.png" alt="采访-马剑越">
+                        <p>YY采访视频</p>
+                        <p>采访-马剑越</p>
+                    </a>
+                    <a class="video_6" target="_blank" href="https://www.bilibili.com/video/BV1EJ411D7dr">
+                         <img  src="./images/video_6.png" alt="女主播采访">
+                         <p>YY宣传视频</p>
+                        <p>女主播采访</p>
+                    </a>
+                    <a class="video_7"  target="_blank" href="https://www.bilibili.com/video/BV1V7411Z7AB">
+                        <img src="./images/video_7.png" alt="YY宣传视频盛典互动">
+                        <p>YY宣传视频</p>
+                        <p>盛典互动</p>
+                    </a>
+                    <a class="video_8"  target="_blank" href="https://www.bilibili.com/video/BV1bt411C7HL">
+                        <img src="./images/video_8.png" alt="抖音宣传视频采访-张欣尧">
+                        <p>抖音宣传视频</p>
+                        <p>采访-张欣尧</p>
+                    </a>
                 <!-- <img class="alipay" src="./images/video_alipay.png" alt=""> -->
             </div>
-            <img id="MCN" src="./images/mcn.jpg" alt="MCN矩阵">
-            <img id="HI" src="./images/contact.jpg" alt="商务合作">
+            <div  id="MCN">
+                <img src="./images/mcn_01.jpg" alt="MCN矩阵">
+                <div class="MctText">
+                    <p>GOGOL IKE是我们独立孵化的本地化内容MCN,迄今为止,</p>
+                    <p>已拥有超过，上千名小红书、抖音等合作红人。希望通过此形式</p>
+                    <p>让红人获得和品牌方联动合作的机会;并通过优质内容已经</p>
+                    <p>获得大麦网、喜茶、星巴克、大众点评等企业的认可。</p>
+                </div>
+            </div>
+            <div style="position: relative;">
+                <img src="./images/mcn_02.jpg" alt="万中无二音乐">
+                <div class="MctText" style="left: 47%;top: 24%;">
+                    <p>万中无二音乐是抖音颇具影响力的音乐厂牌与MCN机构之一</p>
+                    <p>通过专业的原创制作搭配全新短视频内容，创造音乐宣推新模式。</p>
+                </div>
+            </div>
+           <div id="HI">
+                <img src="./images/contact.jpg" alt="联系方式">
+                <div class="HiText">
+                    <p>邮件地址: hello@gooood.tv</p>
+                    <p>或来撩勾勾负责人微信: benhwang1217</p>
+                </div>
+           </div>
        </div>
        <a class="headTop" id="backTop"  href="#head">
             <img src="./images/top.png" alt="返回顶部">

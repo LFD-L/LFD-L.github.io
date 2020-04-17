@@ -30,6 +30,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
   background:#ffffff;
+  color: #5c5c5e;
 }
 
 label {
